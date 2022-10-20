@@ -1,0 +1,79 @@
+*{ padding:0; margin:0; }
+
+body {
+    text-align: center;
+    background-color: lightgray;
+}
+
+nav {
+    display: flex;
+    text-align: center;
+    padding: 10px 10px 10px 20px;
+    background-color: purple;
+}
+
+nav > div#logo, div#buttons{
+    width: 25%;
+}
+
+nav > div#logo {
+    background-color: yellow;
+}
+
+nav > div#buttons {
+    text-align: right;
+    display: block;
+}
+
+nav > div#buttons > p {
+    float: right;
+    padding: 0 10px;
+}
+
+nav > div#page-title {
+    width: 50%;
+}
+
+
+
+
+
+div#main-img {
+    height: 350px;
+    width: 500px;
+    margin: 5% auto;
+    background-color: white;
+
+    /* all below is for visualizing. Delete later. */
+    border-style: solid;
+    border-color: red;
+    border-width: 1px;
+}
+
+div#main-textbox {
+    height: auto;
+    width: 500px;
+    margin: 5% auto 0;
+    padding: 10px 0;
+    background-color: black;
+    color: white;
+
+    /* all below is for visualizing. Delete later. */
+    border-style: solid;
+    border-color: red;
+    border-width: 1px;
+}
+
+div#input-textbox {
+    height: auto;
+    width: 500px;
+    margin: 0 auto;
+    padding: 10px 0;
+    background-color: gray;
+    color: white;
+
+    /* all below is for visualizing. Delete later. */
+    border-style: solid;
+    border-color: red;
+    border-width: 1px;
+}
