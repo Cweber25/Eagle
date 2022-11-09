@@ -49,6 +49,7 @@ nav > img#logo {
 nav > div#buttons {
     text-align: right;
     display: block;
+    margin: auto 3%;
 }
 
 nav > div#buttons > i {
@@ -56,10 +57,42 @@ nav > div#buttons > i {
     padding: 0 8px;
 }
 
+nav > div#buttons > i:hover {
+    transition: color 0.3s ease;
+    color: teal;
+    cursor: pointer;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+  }
+  
+.tooltiptext {
+    visibility: hidden;
+    width: auto;
+    font-size: 12pt;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    opacity: 75%;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+  }
+  
+  nav > div#buttons > i:hover .tooltiptext {
+    visibility: visible;
+  }
+
 nav > div#page-title {
     width: auto;
     text-align: left;
-    margin: 0 auto 0 30%;
+    margin: auto auto auto 30%;
 }
 
 
@@ -71,7 +104,8 @@ div#home-container{
 }
 
 div#home-container img#main-img {
-    width: 65%;
+    max-width: 65%;
+    max-height: 60%;
     margin: 5% auto;
     background-color: black;
     border: 8px ridge rgb(204,152,39);
@@ -80,7 +114,11 @@ div#home-container img#main-img {
 div#home-container p#input-box {
     height: auto;
     width: 50%;
-    margin: auto auto 0;
+    margin: 5% auto 2%;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
     padding: 10px 0;
     background-color: gray;
     color: white;
