@@ -4,6 +4,7 @@
 <html>
     <head>
         <link href="general-layout.css" rel="stylesheet">
+        <link href="button.css" rel="stylesheet">
 
         <title>
             Eagle
@@ -40,7 +41,7 @@
             <form>
                 <!-- <input type="text" name="answer"> -->
                 <input list="places" name="changeImg" id="answer" onkeypress="return searchKeyPress(event);"/>
-                <input type="button" name="zoom" id="zoomBtn" onclick="changeImage()"/>
+                <input type="button" name="zoom" id="zoomBtn" onclick="changeImage(); openPopup()"/>
                 <datalist id="places">
                     <option value="AU archway"></option>
                     <option value="Rec"></option>
@@ -63,8 +64,17 @@
             </form>
         </div>
 
+        
+            <div class="popup">
+                <img src="00_rec.jpg" height="100px" width="100px" alt="image">
+                <h2>Correct!</h2>
+                <p>Click the Link below to learn more. </p>
+                <button type="button"><a href=https://www.ashland.edu>More Information</a></button>
+            </div>
+
+        
         <!-- <div id="input-textbox">
             <p>Textbox #2</p>
-        </div> -->
+        </div>  -->
     </body>
 </html>
