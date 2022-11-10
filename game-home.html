@@ -41,8 +41,8 @@
         <div id="main-textbox">
             <form>
                 <!-- <input type="text" name="answer"> -->
-                <input list="places" name="changeImg" id="answer" onkeypress="return searchKeyPress(event);"/>
-                <input type="button" name="zoom" id="zoomBtn" onclick="changeImage(); openPopup()"/>
+                <input list="places" name="changeImg" id="answer" class="answerBox" onkeypress="return searchKeyPress(event);"/>
+                <input type="button" value="Submit"  name="zoom" id="zoomBtn" class="answerBtn" onclick="changeImage()"/> 
                 <datalist id="places">
                     <option value="AU archway"></option>
                     <option value="Rec"></option>
@@ -52,6 +52,7 @@
                     <option value="Dauch"></option>
                 </datalist>
 
+                
                 <script>
                     function searchKeyPress(e) { // look for window.event in case event isn't passed in
                         e = e || window.event;
