@@ -1,0 +1,45 @@
+.popup1{
+    width: 900px;
+    height: 1000px;
+    background: rgb(255, 255, 255);
+    border-radius: 6px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    top: 57.5%;
+    transform: translate(-50%,-50%) scale(.75);
+    border: rgb(0, 0, 0) 5px solid;
+    font-size: 40px;
+    visibility: hidden;
+}
+.popup1 img{
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.popup1 h2{
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+.popup1 button{
+    width: 100%;
+    margin-top: 20px;
+    padding: 5px 0;
+    background: #a01111;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+a{
+    color: #fff;
+}

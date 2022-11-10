@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-
-
+<script type="text/javascript" src="EagleTest.js"></script>
 
 <html class="au-image tinted">
     <head>
         <link href="general-layout.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+        <link href="button.css" rel="stylesheet">
+        <link href="failed.css" rel="stylesheet">
 
         <title>
-            Eagle Practice (Clay's Branch v2)
+            Eagle
         </title>
     </head>
 
@@ -34,6 +34,7 @@
     </header>
 
     <body>
+    <!--
         <div id="home-container">
             <img id="main-img" src="decorative-images/09_dauch1.JPG"/>
             <p id="input-box">Input Textbox Here</p>
@@ -48,5 +49,57 @@
                 Expecting Cole's work here.
             </p>
         </div>
+    -->
+
+        <div id="main-img">
+            <p>
+                <img class="main-image" src="00_rec.JPG" alt="image" id="img" width="950" height="700"/>
+
+            </p>
+            <p>
+                
+            </p>
+        </div>
+
+        <div id="main-textbox">
+            <form>
+                <!-- <input type="text" name="answer"> -->
+                <input list="places" name="changeImg" id="answer" class="answerBox" onkeypress="return searchKeyPress(event);"/>
+                <input type="button" value="Submit"  name="zoom" id="zoomBtn" class="answerBtn" onclick="changeImage()"/> 
+                <datalist id="places">
+                    <option value="AU archway"></option>
+                    <option value="Rec"></option>
+                    <option value="Library Exterior"></option>
+                    <option value="Founders"></option>
+                    <option value="Patterson"></option>
+                    <option value="Dauch"></option>
+                </datalist>
+
+                
+                <script>
+                    function searchKeyPress(e) { // look for window.event in case event isn't passed in
+                        e = e || window.event;
+                        if (e.keyCode == 13) {
+                            document.getElementById("zoomBtn").click();
+                            return false;
+                        }
+                        return true;
+                    }
+                </script>
+            </form>
+        </div>
+
+        
+            <div class="popup">
+                <img src="00_rec.jpg" height="100px" width="100px" alt="image">
+                <h2>Correct!</h2>
+                <p>Click the Link below to learn more. </p>
+                <button type="button"><a href=https://www.ashland.edu>More Information</a></button>
+            </div>
+
+        
+        <!-- <div id="input-textbox">
+            <p>Textbox #2</p>
+        </div>  -->
     </body>
 </html>
