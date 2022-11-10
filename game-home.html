@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <script type="text/javascript" src="EagleTest.js"></script>
 
-<html>
+<html class="au-image tinted">
     <head>
         <link href="general-layout.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="button.css" rel="stylesheet">
         <link href="failed.css" rel="stylesheet">
 
@@ -12,25 +13,47 @@
         </title>
     </head>
 
+    <header>
+        <nav>
+            <img id="logo" src="decorative-images/eagle.png"/>
+            <div id="page-title">
+                <h1>Eagle</h1>
+            </div>
+            <div id="buttons">
+                <!-- top element will be right-most (float: rigth)-->
+                <i style="font-size:36px" class="fa" href="#">
+                    &#xf013;
+                    <p class="tooltiptext">Help</p>
+                </i>
+                <i style="font-size:36px" class="fa" href="#">
+                    &#xf059;
+                    <p class="tooltiptext">Settings</p>
+                </i>
+            </div>
+        </nav>
+    </header>
+
     <body>
-        <header>
-            <nav>
-                <div id="logo"><!-- left (img) --></div>
-                <div id="page-title">
-                    <h1>Eagle</h1>
-                </div>
-                <div
-                    id="buttons">
-                    <!-- top element will be right-most (float: rigth)-->
-                    <p>(settings)</p>
-                    <p>(Help_Btn)</p>
-                </div>
-            </nav>
-        </header>
+    <!--
+        <div id="home-container">
+            <img id="main-img" src="decorative-images/09_dauch1.JPG"/>
+            <p id="input-box">Input Textbox Here</p>
+        </div>
+
+        <div id="bottom-container">
+            <p>
+                On Screen keyboard?
+                <br><br>
+                Intentionally Blank. 
+                <br>
+                Expecting Cole's work here.
+            </p>
+        </div>
+    -->
 
         <div id="main-img">
             <p>
-                <img src="00_rec.JPG" alt="image" id="img" width="950" height="700"/>
+                <img class="main-image" src="00_rec.JPG" alt="image" id="img" width="950" height="700"/>
 
             </p>
             <p>
