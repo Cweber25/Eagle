@@ -1,13 +1,12 @@
 <!DOCTYPE html>
-
-
+<script type="text/javascript" src="EagleTest.js"></script>
 
 <html>
     <head>
         <link href="general-layout.css" rel="stylesheet">
 
         <title>
-            Eagle Practice (Clay's Branch)
+            Eagle
         </title>
     </head>
 
@@ -18,29 +17,54 @@
                 <div id="page-title">
                     <h1>Eagle</h1>
                 </div>
-                <div id="buttons">
+                <div
+                    id="buttons">
                     <!-- top element will be right-most (float: rigth)-->
                     <p>(settings)</p>
                     <p>(Help_Btn)</p>
                 </div>
             </nav>
         </header>
-        
+
         <div id="main-img">
             <p>
-                Main Image
+                <img src="00_rec.JPG" alt="image" id="img" width="950" height="700"/>
+
             </p>
             <p>
-                Believe me, I tried to center this text vertically.
+                
             </p>
         </div>
 
         <div id="main-textbox">
-            <p>Main Textbox</p>
+            <form>
+                <!-- <input type="text" name="answer"> -->
+                <input list="places" name="changeImg" id="answer" onkeypress="return searchKeyPress(event);"/>
+                <input type="button" name="zoom" id="zoomBtn" onclick="changeImage()"/>
+                <datalist id="places">
+                    <option value="AU archway"></option>
+                    <option value="Rec"></option>
+                    <option value="Library Exterior"></option>
+                    <option value="Founders"></option>
+                    <option value="Patterson"></option>
+                    <option value="Dauch"></option>
+                </datalist>
+
+                <script>
+                    function searchKeyPress(e) { // look for window.event in case event isn't passed in
+                        e = e || window.event;
+                        if (e.keyCode == 13) {
+                            document.getElementById("zoomBtn").click();
+                            return false;
+                        }
+                        return true;
+                    }
+                </script>
+            </form>
         </div>
 
-        <div id="input-textbox">
+        <!-- <div id="input-textbox">
             <p>Textbox #2</p>
-        </div>
+        </div> -->
     </body>
 </html>

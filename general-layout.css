@@ -34,13 +34,16 @@ nav > div#page-title {
     width: 50%;
 }
 
+ 
+
 
 
 
 
 div#main-img {
-    height: 350px;
+    overflow: hidden;
     width: 500px;
+    height: 300px;
     margin: 5% auto;
     background-color: white;
 
@@ -48,6 +51,9 @@ div#main-img {
     border-style: solid;
     border-color: red;
     border-width: 1px;
+    display: block;
+    transform:scale(1.2);
+    transition:.2s ease;
 }
 
 div#main-textbox {
@@ -77,3 +83,5 @@ div#input-textbox {
     border-color: red;
     border-width: 1px;
 }
+
+
