@@ -109,13 +109,11 @@ div#main-img {
     margin: 5% auto;
     background-color: white;
 
-    /* all below is for visualizing. Delete later. */
-    border-style: solid;
-    border-color: red;
-    border-width: 1px;
+    
     display: block;
     transform:scale(1.2);
     transition:.2s ease;
+    border: 8px ridge rgb(204, 152, 38);
 }
 
 div#home-container p#input-box {
