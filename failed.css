@@ -13,7 +13,7 @@
     transform: translate(-50%,-50%) scale(.75);
     border: rgb(0, 0, 0) 5px solid;
     font-size: 40px;
-    visibility: hidden;
+    visibility: visible;
 }
 .popup1 img{
     width: 400px;
