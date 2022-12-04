@@ -1,21 +1,100 @@
+html{
+    background: url("decorative-images\ashland-university-campus.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
 body{
-    width: 100%;
+    width: 70%;
     height: auto;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    /*text-align: center;
+    background-color: rgb(70, 14, 101);
+    margin: 0 auto;
+    width: 70%;
+    padding: 0 0 8%;
+    min-width: 600px;
+    box-shadow: 0 0 15px;*/
 }
 
-*{
-    padding: 0;
-    margin: 0;
-    background-color: grey;
+#container{
+    width: 100%;
+    height: 100%;
 }
 
+/* Header */
 
+/* Instructions*/
+#insttitle{
+    color: white;
+    margin: auto;
+    padding-top: 50px;
+}
+
+#rules{
+    color: white;
+}
+
+#instructions{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+}
+
+ul{
+    width: 70%;
+    display: inline-block;
+    text-align: center;
+    font-size: 25px;
+    padding-top: 40px;
+    list-style-type:decimal;
+}
+
+/* li{
+    background-color: rgb(204,152,39);
+} */
+
+#instructions>p{
+    font-size: 40px;
+    padding-top: 48px;
+}
+
+/* Picture */
 #content-wrapper{
+    position: relative;
     width: 100%;
     height: 10%;
+    padding-top: 60px;
 }
 
 #content-wrapper img{
     width: 100%;
     height: auto;
+}
+
+/*#content-wrapper img:hover{
+    /* brightness only when hover
+    filter: brightness(30%)
+}*/
+
+#button-wrapper a{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-top: 70px;
+    font-size: 30px;
+    color: white;
+    filter: opacity(0);
+}
+
+footer{
+    position:absolute;
+    padding-top: 25px;
+    padding-left: 25%;
+    color: white;
 }
