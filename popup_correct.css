@@ -1,9 +1,10 @@
 .popup{
     width: 900px;
     height: 100%;
-    background: #fff;
+    background: rgb(245,245,245);
     border-radius: 6px;
     position: absolute;
+    z-index: 101; /* puts it on top of everything */
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -12,6 +13,9 @@
     visibility: hidden;
     top: 57.5%;
     transform: translate(-50%,-50%) scale(.75);
+    opacity: 1;
+    /* box-shadow: 100000px black; */
+    box-shadow: color 200px 100px black;
 }
 .popup img{
     width: 400px;
@@ -38,3 +42,24 @@
     cursor: pointer;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
+
+
+#tinter {
+    visibility: hidden;
+    height:100%;
+    width:100%;
+    position:static;
+    background-color: black;
+
+    position: fixed; /* keeps the screen covered durning scroll */
+    z-index: 100; /* puts it on top of everything */
+    top: 0;
+    left: 0;
+    opacity: 0.423; /* so we can see through it */
+    pointer-events: none; /* so we can click through it */
+}
+
+.popup p{
+   font-size: 2em;
+
+} 

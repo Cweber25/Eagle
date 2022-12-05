@@ -5,8 +5,8 @@
     <head>
         <link href="general-layout.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link href="button.css" rel="stylesheet">
-        <link href="failed.css" rel="stylesheet">
+        <link href="popup_correct.css" rel="stylesheet">
+        <link href="popup_fail.css" rel="stylesheet">
 
         <title>
             Eagle 2.0
@@ -35,10 +35,11 @@
         </nav>
     </header>
 
-    <body onload="myFunction()">
+    <body onload="getDailyImage()">
         <div id="main-img">
             <p>
-                <img class="main-image" src="images/00_niss-interior.JPG" alt="image" id="img" width="1600" height="1400"/>
+                <!-- <img class="main-image" src="images/00_niss-interior.JPG" alt="image" id="img" width="1600" height="1400"/> -->
+                <img class="main-image" alt="image" id="img" width="1600" height="1400">
 
             </p>
             <p>
@@ -53,12 +54,25 @@
                 <br>
                 <input type="button" value="Submit"  name="zoom" id="zoomBtn" class="answerBtn" onclick="changeImage()"/> 
                 <datalist id="places">
-                    <option value="AU archway"></option>
-                    <option value="Rec"></option>
-                    <option value="Library Exterior"></option>
-                    <option value="Founders"></option>
+                    <option value="Niss Interior"></option>
+                    <option value="Recreation Center"></option>
+                    <option value="Niss Exterior"></option>
+                    <option value="Jack Miller Stadium Sign"></option>
+                    <option value="Dwight Schar College of Education"></option>
+                    <option value="Dauch College of Business"></option>
                     <option value="Patterson"></option>
+                    <option value="The Quad"></option>
                     <option value="Dauch"></option>
+                    <option value="Archer Library"></option>
+                    
+                    
+                    <!-- answers that are not in the picture list \/ \/ \/ -->
+                    <option value="Kettering Science Center"></option>
+                    <option value="John C. Myers Convocation Center"></option>
+                    <option value = "Andrews Hall"></option>
+                    <option value = "Kem Hall"></option>
+                    <option value = "Kettering Greenhouse"></option>
+
                 </datalist>
 
                 
@@ -76,13 +90,14 @@
         </div>
 
         
-            <div class="popup">
-                <img src="00_rec.jpg" height="100px" width="100px" alt="image">
-                <h2>Correct!</h2>
-                <p>Click the Link below to learn more. </p>
-                <button type="button"><a href=https://www.ashland.edu>More Information</a></button>
-            </div>
+        <div id="tinter"></div>
 
+        <div class="popup">
+            <img id="popImg" height="100px" width="100px" alt="image">
+            <h2 id="popup_h2">Correct!</h2>
+            <p id="pg">Click the Link below to learn more. </p>
+            
+        </div>
         
         <!-- <div id="input-textbox">
             <p>Textbox #2</p>
