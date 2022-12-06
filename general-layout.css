@@ -55,12 +55,16 @@ nav > div#buttons {
     margin: auto 3%;
 }
 
+nav > div#buttons > a {
+    color: black;
+}
+
 nav > div#buttons > i {
     float: right;
     padding: 0 8px;
 }
 
-nav > div#buttons > i:hover {
+nav > div#buttons > a > i:hover {
     transition: color 0.3s ease;
     color: teal;
     cursor: pointer;
