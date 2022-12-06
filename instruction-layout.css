@@ -98,3 +98,18 @@ footer{
     padding-left: 25%;
     color: white;
 }
+
+#play-now-btn {
+    color: white;
+}
+
+#play-now-btn {
+    color: white;
+    text-decoration: none;
+}
+
+#play-now-btn:hover {
+    color: darkgray;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
