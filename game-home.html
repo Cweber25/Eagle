@@ -19,7 +19,8 @@
             <div id="page-title">
                 <h1>Eagle</h1>
             </div>
-            <div id="buttons">
+            <div
+                id="buttons">
                 <!-- top element will be right-most (float: rigth)-->
                 <a href="instruction-page.html">
                     <i style="font-size:36px" class="fa" href="instruction-page.html">
@@ -38,9 +39,7 @@
                 <img class="main-image" alt="image" id="img" width="1600" height="1400">
 
             </p>
-            <p>
-                
-            </p>
+            <p></p>
         </div>
 
         <div id="main-textbox">
@@ -48,7 +47,7 @@
                 <!-- <input type="text" name="answer"> -->
                 <input list="places" name="changeImg" id="answer" class="answerBox" onkeypress="return searchKeyPress(event);"/>
                 <br>
-                <input type="button" value="Submit"  name="zoom" id="zoomBtn" class="answerBtn" onclick="changeImage()"/> 
+                <input type="button" value="Submit" name="zoom" id="zoomBtn" class="answerBtn" onclick="changeImage()"/>
                 <datalist id="places">
                     <option value="Niss Interior"></option>
                     <option value="Recreation Center"></option>
@@ -60,18 +59,18 @@
                     <option value="The Quad"></option>
                     <option value="Dauch"></option>
                     <option value="Archer Library"></option>
-                    
-                    
+
+
                     <!-- answers that are not in the picture list \/ \/ \/ -->
                     <option value="Kettering Science Center"></option>
                     <option value="John C. Myers Convocation Center"></option>
-                    <option value = "Andrews Hall"></option>
-                    <option value = "Kem Hall"></option>
-                    <option value = "Kettering Greenhouse"></option>
+                    <option value="Andrews Hall"></option>
+                    <option value="Kem Hall"></option>
+                    <option value="Kettering Greenhouse"></option>
 
                 </datalist>
 
-                
+
                 <script>
                     function searchKeyPress(e) { // look for window.event in case event isn't passed in
                         e = e || window.event;
@@ -85,18 +84,26 @@
             </form>
         </div>
 
-        
+
         <div id="tinter"></div>
 
         <div class="popup">
             <img id="popImg" height="100px" width="100px" alt="image">
             <h2 id="popup_h2">Correct!</h2>
-            <p id="pg">Click the Link below to learn more. </p>
-            <p id="timer"> ERROR </p>
+            <p id="pg">Click the Link below to learn more.
+            </p>
+            
+            <input type="hidden" id="set-time" value="1"/>
+            <div id="countdown">
+                Time Remaining Until Next Place
+                <div id='tiles' class="color-full"></div>
+                <div class="countdown-label"></div>
+            </div>
+            <script type="text/javascript" src="countDownTimer.js"></script>
         </div>
-        
+
         <!-- <div id="input-textbox">
-            <p>Textbox #2</p>
-        </div>  -->
+                    <p>Textbox #2</p>
+                </div>  -->
     </body>
 </html>
