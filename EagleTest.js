@@ -5,8 +5,8 @@ var answerFinal = null; // not used?
 var date = new Date()
 var currDay = date.getDate() - 1 // -1 to 0-index the value
 var numImages = 11
-var answerInd = (currDay % numImages);
-// var answerInd = Math.floor(Math.random()*11);
+// var answerInd = (currDay % numImages);
+var answerInd = Math.floor(Math.random()*11);
 
  
 function ImageArray(n) {
@@ -59,7 +59,7 @@ const paragraph = {
       Education would be the Schar Caffe, which is a small place to get snacks \
       and coffee in the mornings.",
   6: "Dauch is a building where, as the name suggests, business and economics take place. There are many offices and conference rooms around the interior, and there is even a lounge. Many classes take place in Dauch - most of which are related to math in some way, be it accounting, core math classes, and also some miscellaneous classes.",
-  7: "Patterson",
+  7: "The Patterson Instructional Technology Center (usually known as simply “Patterson”) is one of the few academic focused buildings on campus that focuses almost entirely on academics. For the most part, Patterson is where students go for anything related to technology, as the name suggests. It is home to the offices of Professors in the Computer Science, Math, and Cyber Security departments in addition to a few classrooms and a computer lab. Most students, however, will be visiting Patterson to meet with the university’s IT department and Tech Support.",
   8: "The Quad is where the University actually started. The most defining trait of the Quad is the flagpole that flies the United States flag, and is the designated meeting place for mass gatherings. Many frequently accessed locations are surrounding the Quad. A few examples of this are: the Library, the Kettering Science Center, Patterson, and Founder’s Hall.",
   9: "The Campus Library is the tallest building on the Ashland campus. It is more than just a library, as it is also a hub of scholarly research articles that the students have access to free of charge. The Library also provides services assisting students with formatting papers, and gives the students a quiet area to focus on schoolwork; this also extends to private study rooms that are free to be reserved by students. The uses of the Library extend even further, as the Library is where the Freshman Academic Advisors work, and where tutors can be found.",
   10: "The Campus Library is the tallest building on the Ashland campus. It is more than just a library, as it is also a hub of scholarly research articles that the students have access to free of charge. The Library also provides services assisting students with formatting papers, and gives the students a quiet area to focus on schoolwork; this also extends to private study rooms that are free to be reserved by students. The uses of the Library extend even further, as the Library is where the Freshman Academic Advisors work, and where tutors can be found."
